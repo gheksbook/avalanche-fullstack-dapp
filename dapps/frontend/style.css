@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #142b33, #0f2027);
+  color: #e8e8e8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin-top: 0;
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 18px 0;
+  border: none;
+  border-radius: 10px;
+  background: #e84142;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #cf3435;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.disconnect {
+  background: #555a61 !important;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+#address {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  background: rgba(255,255,255,0.05);
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.success {
+  color: #4cd137;
+}
+
+.warn {
+  color: #fbc531;
+}
+
+.error {
+  color: #e84118;
+}
