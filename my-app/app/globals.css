@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Background & layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e3f2fd, #fff);
+  color: #222;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card utama */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  border: 1px solid #eaeaea;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Sections */
+.section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section-label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Wallet box */
+.wallet-box {
+  background: #f7faff;
+  border: 1px solid #d3e4ff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wallet-label {
+  color: #6c7a99;
+  font-size: 13px;
+}
+
+.wallet-address {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: #274b8a;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-connect {
+  background: #007aff;
+  color: white;
+}
+
+.btn-connect:hover {
+  background: #0062d6;
+}
+
+/* Disconnect button improved */
+.btn-disconnect {
+  background: #ffe8e8;
+  color: #c62828;
+  border: 1px solid #ffbdbd;
+}
+
+.btn-disconnect:hover {
+  background: #ffd0d0;
+}
+
+/* Action button */
+.btn-action {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-action:hover {
+  background: #27b863;
+}
+
+/* Link button */
+.btn-link {
+  cursor: pointer;
+  font-size: 12px;
+  color: #1976d2;
+  text-decoration: underline;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+/* Input */
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cfd8dc;
+  font-size: 15px;
+}
+
+/* Values */
+.value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.loading {
+  opacity: 0.6;
+}
+
+/* Footer note */
+.footer-note {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 14px;
+  color: #a0a0a0;
+}
+
